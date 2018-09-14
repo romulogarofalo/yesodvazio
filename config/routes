@@ -4,3 +4,5 @@
 /robots.txt RobotsR GET
 
 / HomeR GET 
+
+/payWithStripe                      PaymentWithStripeR        OPTIONS POST

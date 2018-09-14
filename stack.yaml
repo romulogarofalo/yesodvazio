@@ -37,9 +37,15 @@ resolver: lts-9.8
 # will not be run. This is useful for tweaking upstream packages.
 packages:
 - .
+- location: http://hackage.haskell.org/package/stripe-haskell-2.4.0/stripe-haskell-2.4.0.tar.gz
+  extra-dep: true
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
-extra-deps: []
+extra-deps:
+- stripe-http-client-2.4.0
+- stripe-core-2.4.0
+- stripe-http-streams-2.4.0
+
 
 # Override default flag values for local packages and extra-deps
 flags: {}
